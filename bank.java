@@ -185,7 +185,7 @@ class CurrentAccount extends BankAccount {
 
 public class BankManagementSystem {
 
-    
+
     private static SavingsAccount savingsAccount;
     private static CurrentAccount currentAccount;
     private static FixedAccount fixedAccount;
@@ -255,7 +255,7 @@ public class BankManagementSystem {
             System.out.println("9. Create Current Account");
             System.out.println("10. Create Fixed Account");
             System.out.println("11. Go Back to Previous Menu");
-            System.out.print("Enter your choice: ");
+            System.out.print("Enter your choice based on above options : ");
             choice = scanner.nextInt();
 
             switch (choice) {
@@ -346,7 +346,7 @@ public class BankManagementSystem {
             currentAccount.deposit(amount);
             System.out.println("Amount transferred from savings account to current account: " + amount);
         } else {
-            System.out.println("Insufficient funds in savings account.");
+            System.out.println("Insufficient funds in savings account  ");
         }
     }
 
@@ -364,7 +364,7 @@ public class BankManagementSystem {
             savingsAccount.deposit(amount);
             System.out.println("Amount transferred from current account to savings account: " + amount);
         } else {
-            System.out.println("Insufficient funds in current account.");
+            System.out.println("Insufficient funds in current account  ");
         }
     }
 
